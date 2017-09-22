@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+    dbserver:
+        image: mysql
+        ports:
+            - "3306:3306"
+        hostname: dbserver
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: coffee_bear
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: PASSWORD

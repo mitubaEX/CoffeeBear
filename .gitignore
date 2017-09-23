@@ -94,3 +94,5 @@ target
 /.project
 /.settings
 /RUNNING_PID
+
+mysql
